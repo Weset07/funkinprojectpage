@@ -1,0 +1,169 @@
+body {
+    background-image: url('images/menuBG.png'); /* Un gris oscuro, o elige el color que prefieras */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;/* Centra la imagen en la pantalla */
+    margin: 0; /* Elimina el margen por defecto del body */
+    min-height: 100vh;
+}
+.logoc{
+    width: 80%; /* O el ancho deseado */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+p {
+    font-size: 1.5em; /* Aumenta el tamaño de la letra */
+    line-height: 1.6; /* Espacio entre líneas */
+    font-family: 'Verdana', sans-serif; /* Puedes cambiar a otra fuente */
+    color: #f0f0f0; /* Color de la letra */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    margin: 15px 0; /* Margen superior e inferior */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente */
+}
+
+.logo {
+    border-radius: 100%;
+    width: 35%;
+    display: block; /* Para que el margen auto funcione */
+    margin: 0 auto; /* Aplica márgenes automáticos */
+    max-width: 100%; /* Para que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.imagen-fondo {
+    width: 35%; /* Ajusta el ancho a 300 píxeles */
+    height: 45%; /* Ajusta la altura a 200 píxeles */
+    display: block;
+    margin: 0 auto;
+}
+
+.contenedor-imagen {
+    position: relative;
+}
+
+.contenedor-videos {
+    left: 50.5%;
+    top: 55%;
+    width: 25%; /* Ajusta el tamaño del área de los videos */
+    height: 53%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de videos */
+    gap: 20px; /* Espacio entre videos */
+    position: absolute;
+}
+
+.video {
+    width: 43%;
+    aspect-ratio: 1/1;
+    border-radius: 100%; /* Opcional para bordes redondeados */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.replace {
+    opacity: 0;
+}
+
+.replace:hover {
+    opacity: 1;
+    transform: scale(1.4);
+    transition:opacity 0.3s,transform 0.3s ease;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* Estilos para el main */
+main {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las secciones dentro del main */
+}
+
+/* Estilo de las secciones dentro del main */
+main section {
+    margin-bottom: 120px; /* Espacio entre secciones */
+    text-align: center; /* Centra el contenido dentro de cada sección */
+}
+
+/* Estilo de las imágenes en las secciones */
+main section img {
+    width: 450px; /* Tamaño consistente para las imágenes */
+    height: 450px; /* Asegura que todas tengan la misma altura */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    display: block; /* Permite que margin auto funcione */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+#play-sound {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#play-sound img {
+    width: 575px;
+    height: 225px;
+    border-radius: 300px;
+}
+
+.contenedordeboton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 60px;
+}
+.boton{
+    width: 960px;
+    height: 540px;
+    padding: 0px;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+}
+
+/* Estilos generales para el footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#weset {
+
+    width: 32px;
+    transform: translate(10px, 5px) scale(150%);
+
+}
+
+.titlecharacterlong {
+    width: 600px; /* Define el ancho deseado */
+    height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+    max-height: 300px; /* Define una altura máxima para la imagen */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
+}
+
+.titlecharactershort {
+    width: 400px; /* Define el ancho deseado */
+    height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto */
+    max-height: 300px; /* Define una altura máxima para la imagen */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor manteniendo la relación de aspecto */
+}
