@@ -102,6 +102,7 @@ main section img {
 
 .modal {
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -109,8 +110,8 @@ main section img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1000; 
 }
 
 #play-sound {
@@ -124,6 +125,22 @@ main section img {
     width: 575px;
     height: 225px;
     border-radius: 300px;
+}
+
+#skip-sound {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 20px; /* Espacio entre el botón de play y skip */
+    display: block; /* Asegura que el botón sea visible */
+}
+
+#skip-sound img {
+    width: 275px; /* Mismo ancho que el botón de play */
+    height: 125px; /* Mismo alto que el botón de play */
+    border-radius: 300px; /* Bordes redondeados */
+    display: block; /* Asegura que la imagen sea visible */
 }
 
 .contenedordeboton{

@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     backgroundSound.loop = true;
 
     const playButton = document.getElementById('play-sound');
+    const skipButton = document.getElementById('skip-sound'); // Nuevo botón
     const modal = document.getElementById('modal');
 
     playButton.addEventListener('click', () => {
@@ -28,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(error => {
                 console.log('Error al reproducir el audio:', error);
             });
+    });
+
+    skipButton.addEventListener('click', () => {
+        modal.style.display = 'none'; // Oculta el modal sin reproducir sonido
     });
 
     const FNFgame = document.getElementById("gameframe");
