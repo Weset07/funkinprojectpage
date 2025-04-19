@@ -137,8 +137,8 @@ main section img {
 }
 
 #skip-sound img {
-    width: 275px; /* Mismo ancho que el botón de play */
-    height: 125px; /* Mismo alto que el botón de play */
+    width: 310px; /* Mismo ancho que el botón de play */
+    height: 155px; /* Mismo alto que el botón de play */
     border-radius: 300px; /* Bordes redondeados */
     display: block; /* Asegura que la imagen sea visible */
 }
